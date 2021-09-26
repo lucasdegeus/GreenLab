@@ -1,0 +1,36 @@
+{
+  "adb_path": "/usr/lib/android-sdk/adb",
+  "monkeyrunner_path": "/usr/lib/android-sdk/tools/monkeyrunner",
+  "type": "web",
+  "devices": {
+    "todoPutAdbDevviceNameHere": {}
+  },
+  "repetitions": 10,
+  "clear_cache": true,
+  "randomization": false,
+  "duration": 1000,
+  "reset_adb_among_runs": false,
+  "time_between_run": 100,
+  "usb_handler" : {
+    "enable_command"  : "uhubctl -l 2 -a 1",
+    "disable_command" : "uhubctl -l 2 -a 0"
+  },
+  "run_stopping_condition": {"function":  {}},
+  "paths": ["what", "is", "this", "list", "of", "urls"],
+  "browsers": ["chrome", "firefox", "opera"],
+  "profilers": {
+    "trepn": {
+      "profiling_interval": 100,
+      "battery_power_source_selection": "Auto-Select"
+    },
+    "perfumejs": {
+      "metrics": [
+        "fp",
+        "fcp"
+      ]
+    },
+    "scripts": {
+      "interaction": "scripts/interaction.py"
+    }
+  }
+}
