@@ -18,6 +18,11 @@ With Critical debugging output
 ```sh
  python3 '.\02 criticalcss_extractor.py' --path <path to head directory> --criticalDebug True
 ```
+Change the viewport used by Critical (default is 412x732)
+```sh
+ python3 '.\02 criticalcss_extractor.py' --path <path to head directory> --width <width> --height <height>
+```
+
 
 ## Example 
 An example folder is available containing three subfolders of which one is valid. 

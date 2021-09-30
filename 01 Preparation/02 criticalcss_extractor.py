@@ -24,7 +24,7 @@ RED = "\033[91m"
 GREEN = "\033[92m"
 END = "\033[0m"
 
-def extract_and_inline_criticalcss(path, subfolder):
+def extract_and_inline_criticalcss(path, subfolder, width, height):
     subfolder_path = path + "/" + subfolder
     if (not os.path.isdir(subfolder_path)):
         print(f"{RED}" + subfolder + f" - Skipping: {END}" + subfolder_path + ": Given path is not a directory")
@@ -39,8 +39,7 @@ def extract_and_inline_criticalcss(path, subfolder):
         return(False)
 
     # os.system('critical '+ subfolder_path + "/index.html " + "--inline > " + subfolder_path + "/index.critical.html --base " + path) 
-    cmd = 'critical '+ subfolder_path + "/index.html " + "--inline > " + subfolder_path + "/index.critical.html --base " + path + " -w 412 -h 732"
-    print(cmd)
+    cmd = 'critical '+ subfolder_path + "/index.html " + "--inline > " + subfolder_path + "/index.critical.html --base " + path + " -w " + width + " -h " + height
     if criticalDebug:
         subprocess.run(cmd,shell=True)
     else: 
@@ -76,17 +75,21 @@ Make sure critical is installed properly and usable via CLI. ''')
 
 parser.add_argument('--path', dest='Path', metavar='path', type=str, help='base folder containing website folders (String)')
 parser.add_argument('--criticalDebug', dest='criticalDebug', metavar='path', type=bool, help='print output from critical (Boolean)', default=False)
+parser.add_argument('--width', dest='width', metavar='path', type=str, help='print output from critical (Boolean)', default="412")
+parser.add_argument('--height', dest='height', metavar='path', type=str, help='print output from critical (Boolean)', default="732")
 
 args = parser.parse_args()
 path = args.Path
 criticalDebug = args.criticalDebug
+width = args.width
+height = args.height
 if (not os.path.isdir(path)):
     sys.exit("Given path is not a directory")
 
 if not any(os.scandir(path)):
     sys.exit("Given directory is empty")
 
-[extract_and_inline_criticalcss(path, subfolder) for subfolder in os.listdir(path)]
+[extract_and_inline_criticalcss(path, subfolder, width, height) for subfolder in os.listdir(path)]
 
 
 
