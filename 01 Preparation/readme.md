@@ -34,7 +34,7 @@ python3 '.\02 criticalcss_extractor.py' --path example
 ```
 ###### Output
 ```sh
-invalid_folder_example - Skipping: criticalcss_example/invalid_folder_example: Given directory is empty
-invalid_folder_example_2 - Skipping: criticalcss_example/invalid_folder_example_2: Folder does not contain index.html
-python_website - Succes: created index.critical.html in criticalcss_example/python_website
+invalid_folder_example - Skipping: example/invalid_folder_example: Given directory is empty
+invalid_folder_example_2 - Skipping: example/invalid_folder_example_2: Folder does not contain index.html
+python_website - Succes: created index.critical.html in example/python_website
 ```
