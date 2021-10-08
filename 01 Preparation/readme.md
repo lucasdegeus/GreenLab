@@ -30,7 +30,7 @@ An example folder is available containing three subfolders of which one is valid
 ##### Example expected behaviour:
 ###### Input
 ```sh
-python3 '.\02 criticalcss_extractor.py' --path criticalcss_example 
+python3 '.\02 criticalcss_extractor.py' --path example
 ```
 ###### Output
 ```sh
