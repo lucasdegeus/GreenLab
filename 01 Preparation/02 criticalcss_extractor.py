@@ -23,19 +23,38 @@ __version__ = "1.0.1"
 RED = "\033[91m"
 GREEN = "\033[92m"
 END = "\033[0m"
+counter_succes = 0
+counter_skip = 0
+counter_css_fail = 0
+counter_empty_dir = 0
+counter_no_index = 0
+counter_no_dir = 0
+
 
 def extract_and_inline_criticalcss(path, subfolder, width, height):
     subfolder_path = path + "/" + subfolder
+    global counter_succes
+    global counter_skip
+    global counter_css_fail
+    global counter_empty_dir
+    global counter_no_dir
+    global counter_no_index
     if (not os.path.isdir(subfolder_path)):
         print(f"{RED}" + subfolder + f" - Skipping: {END}" + subfolder_path + ": Given path is not a directory")
+        counter_skip +=1
+        counter_no_dir +=1
         return(False)
 
     if not any(os.scandir(subfolder_path)):
         print(f"{RED}" + subfolder + f" - Skipping: {END}" + subfolder_path + ": Given directory is empty")
+        counter_skip +=1
+        counter_empty_dir += 1
         return(False)
 
     if not os.path.isfile(subfolder_path + "/" + 'index.html'):
         print(f"{RED}" + subfolder + f" - Skipping: {END}" + subfolder_path + ": Folder does not contain index.html")
+        counter_skip +=1
+        counter_no_index += 1
         return(False)
 
     # os.system('critical '+ subfolder_path + "/index.html " + "--inline > " + subfolder_path + "/index.critical.html --base " + path) 
@@ -48,21 +67,15 @@ def extract_and_inline_criticalcss(path, subfolder, width, height):
     if (not os.path.getsize(subfolder_path + "/index.critical.html") > 0):
         os.remove(subfolder_path + "/index.critical.html")
         print(f"{RED}" + subfolder + f" - Skipping: {END}" + "Something went wrong during critical CSS creation")
+        counter_skip +=1
+        counter_css_fail += 1
         return(False)
-
-    # critical_index = Path(subfolder_path + "/index.critical.html")
-    # critical_index.write_text(critical_index.read_text(encoding="utf-16"), encoding="utf-8")
-
-
-    # with open(subfolder_path + "/index.critical.html", 'rb') as source_file:
-    #     with open(subfolder_path + "/index.critical.html", 'w+b') as dest_file:
-    #         contents = source_file.read()
-    #         dest_file.write(contents.decode('utf-16').encode('utf-8'))
 
     with open(subfolder_path + "/index.critical.html", 'a', encoding='utf-8') as f:
         f.write("") 
 
     print(f"{GREEN}" + subfolder + f" - Succes: {END}created index.critical.html in " + subfolder_path)
+    counter_succes += 1
     return(True)
 
 
@@ -90,6 +103,7 @@ if not any(os.scandir(path)):
     sys.exit("Given directory is empty")
 
 [extract_and_inline_criticalcss(path, subfolder, width, height) for subfolder in os.listdir(path)]
+print("Amount of succesful: %s \nAmount of failed: %s \nAmount of critical failed: %s \nAmount of no index.html present:%s \nAmount of directories not existing %s \nAmount of directories empty %s" % (counter_succes, counter_skip, counter_css_fail, counter_no_index, counter_no_dir, counter_empty_dir))
 
 
 

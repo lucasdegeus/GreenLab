@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://www.python.org/ -->
+<html class="js touch geolocation fontface generatedcontent svg formvalidation placeholder boxsizing retina flexslide" lang="en" dir="ltr" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="prefetch" href="./index_files/jquery.min.js.download">
+    <link rel="prefetch" href="./index_files/jquery-ui.min.js.download">
+
+    <meta name="application-name" content="Python.org">
+    <meta name="msapplication-tooltip" content="The official home of the Python Programming Language">
+    <meta name="apple-mobile-web-app-title" content="Python.org">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="imagetoolbar" content="false">
+
+    <style>.main-header{background-color:#2b5b84;background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMxZTQxNWUiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzJiNWI4NCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size:100%;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#1e415e),color-stop(90%,#2b5b84));background-image:-moz-linear-gradient(#1e415e 10%,#2b5b84 90%);background-image:-webkit-linear-gradient(#1e415e 10%,#2b5b84 90%);background-image:linear-gradient(#1e415e 10%,#2b5b84 90%);-moz-box-shadow:inset 0 0 50px rgba(0,0,0,.03),inset 0 0 20px rgba(0,0,0,.03);-webkit-box-shadow:inset 0 0 50px rgba(0,0,0,.03),inset 0 0 20px rgba(0,0,0,.03);box-shadow:inset 0 0 50px rgba(0,0,0,.03),inset 0 0 20px rgba(0,0,0,.03)}#dive-into-python .flex-control-paging a,.button,.donate-button,.header-banner .button,.header-banner a.button,.search-button,a.button,button,button[type=submit]{color:#4d4d4d!important;font-weight:400;margin-bottom:.4375em;padding:.4em .75em .35em;text-align:left;white-space:nowrap;text-shadow:1px 1px 1px rgba(255,255,255,.3);background-color:#ccc;background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiNkOWQ5ZDkiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size:100%;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#d9d9d9),color-stop(90%,#ccc));background-image:-moz-linear-gradient(#d9d9d9 10%,#ccc 90%);background-image:-webkit-linear-gradient(#d9d9d9 10%,#ccc 90%);background-image:linear-gradient(#d9d9d9 10%,#ccc 90%);border-top:1px solid #caccce;border-right:1px solid #caccce;border-bottom:1px solid #999;border-left:1px solid #caccce;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-moz-box-shadow:1px 1px 1px rgba(0,0,0,.05),inset 0 0 5px rgba(255,255,255,.5);-webkit-box-shadow:1px 1px 1px rgba(0,0,0,.05),inset 0 0 5px rgba(255,255,255,.5);box-shadow:1px 1px 1px rgba(0,0,0,.05),inset 0 0 5px rgba(255,255,255,.5)}.donate-button,.header-banner .button,.header-banner a.button{background-color:#ffd343;background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiNmZmRmNzYiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iI2ZmZDM0MyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size:100%;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#ffdf76),color-stop(90%,#ffd343));background-image:-moz-linear-gradient(#ffdf76 10%,#ffd343 90%);background-image:-webkit-linear-gradient(#ffdf76 10%,#ffd343 90%);background-image:linear-gradient(#ffdf76 10%,#ffd343 90%);border-top:1px solid #dca900;border-right:1px solid #dca900;border-bottom:1px solid #dca900;border-left:1px solid #dca900}#dive-into-python .flex-control-paging a,.search-button,button[type=submit]{color:#e6e8ea!important;text-shadow:none;background-color:#2b5b84;background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMzNzc2YWIiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzJiNWI4NCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size:100%;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#3776ab),color-stop(90%,#2b5b84));background-image:-moz-linear-gradient(#3776ab 10%,#2b5b84 90%);background-image:-webkit-linear-gradient(#3776ab 10%,#2b5b84 90%);background-image:linear-gradient(#3776ab 10%,#2b5b84 90%);border-top:1px solid #3d83be;border-right:1px solid #3776ab;border-bottom:1px solid #3776ab;border-left:1px solid #3d83be;-moz-box-shadow:inset 0 0 5px rgba(55,118,171,.2);-webkit-box-shadow:inset 0 0 5px rgba(55,118,171,.2);box-shadow:inset 0 0 5px rgba(55,118,171,.2)}.header-banner a:not(.button),.header-banner a:not(.readmore){border-bottom:1px solid #ffdf76;text-decoration:none}.header-banner:after,form:after{content:"";display:table;clear:both}body,code,div,fieldset,form,h1,header,html,img,label,li,nav,ol,p,pre,small,span,strong,ul{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}form,header,nav{display:block}button,input{display:inline-block;vertical-align:middle}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;overflow-y:scroll;-webkit-font-smoothing:antialiased;margin:0}body{text-rendering:optimizeSpeed}button,input{font:99%;-webkit-font-smoothing:antialiased;margin:0}h1{font-weight:400}ol,ul{margin-left:1.5em}ul{list-style:square}ol{list-style:decimal}.menu,nav ul{margin-left:0;list-style:none;list-style-image:none}small{font-size:85%}strong{font-weight:700}code,pre{font-family:Consolas,'Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New',monospace,sans-serif}pre{white-space:pre-wrap;white-space:-moz-pre-wrap!important;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}code{color:#11a611}button{-webkit-appearance:button;-moz-appearance:button}input[type=search]{-webkit-appearance:textfield}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}@-ms-viewport{width:device-width}html{background-color:#2b5b84;font:normal 100%/1.625 SourceSansProRegular,Arial,sans-serif}body{color:#444;background-color:#fff}body:after{content:'small';display:none}body,button,input{color:#444;font:normal 100%/1.625 SourceSansProRegular,Arial,sans-serif}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}a,a:visited{color:#3776ab;text-decoration:none}a img{display:block;margin:0 auto}img{max-width:100%}h1{color:#3776ab;font-family:SourceSansProBold,Arial,sans-serif;line-height:1em;font-size:1.75em;margin-bottom:.4375em}label{display:block;color:#999;font-weight:700;margin-top:.875em;margin-top:.21875em}input{width:100%;padding:.65em;border:1px solid #caccce;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px}input{margin-bottom:.875em}::-webkit-input-placeholder{color:#999;font-style:italic}input:-moz-placeholder{color:#999;font-style:italic}.button,a.button,button{display:block}strong{font-family:SourceSansProBold,Arial,sans-serif}.say-no-more{display:none;visibility:hidden}.prompt{font-family:Flux-Regular,SourceSansProRegular,Arial,sans-serif;font-size:120%;letter-spacing:-.0625em}.python .top-bar .python-meta a{color:#fff;background-color:#1f2a32;background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMxMzE5MWUiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzFmMmEzMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size:100%;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(10%,#13191e),color-stop(90%,#1f2a32));background-image:-moz-linear-gradient(#13191e 10%,#1f2a32 90%);background-image:-webkit-linear-gradient(#13191e 10%,#1f2a32 90%);background-image:linear-gradient(#13191e 10%,#1f2a32 90%)}.python .top-bar .python-meta a:before{left:50%}.top-bar{color:#bbb;background-color:#1e2933;border-bottom:1px solid #1f3b47}.top-bar a{position:relative;display:block;color:#999;background:0 0;text-align:center;padding:.5em .75em .4em;font-size:1em;line-height:1.75em}.top-bar a:before{position:absolute;content:"";width:0;height:0;border-color:transparent;border-style:solid;border-width:.5em;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;top:0;left:-9999px;margin-left:-.25em}.top-bar li{border-top:3px solid #3776ab}.top-bar .python-meta,.top-bar .python-meta a:before{border-top-color:#3776ab}.top-bar .psf-meta,.top-bar .psf-meta a:before{border-top-color:#78797a}.top-bar .docs-meta,.top-bar .docs-meta a:before{border-top-color:#ffd343}.top-bar .pypi-meta,.top-bar .pypi-meta a:before{border-top-color:#82b043}.top-bar .jobs-meta,.top-bar .jobs-meta a:before{border-top-color:#a06ba7}.top-bar .shop-meta,.top-bar .shop-meta a:before{border-top-color:#b55863}.meta-navigation{text-align:center}.meta-navigation .menu{margin-bottom:0}.meta-navigation .jump-link{background-color:#11171d}.main-header{border-top:1px solid #191919;border-bottom:1px solid #444}.main-header .container{text-align:center;padding:.75em 1em}.site-headline{color:#fff;margin:.15em auto .2em}.site-headline a{display:block;margin:0 auto}.site-headline a .python-logo{width:217.5px;height:61.5px}.options-bar-container{float:none}.donate-button{display:block;text-align:center;position:relative;top:0;margin:1em .7em}.options-bar{width:100%;color:#bbb;margin-bottom:1.3125em;border-top:1px solid #2d3e4d;border-bottom:1px solid #070a0c;background-color:#1e2933;line-height:1em;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px}.options-bar form{padding:.35em .2em .3em}.options-bar .breaker{display:block;width:100%;height:1px;font-size:1px;line-height:1px;border-top:1px solid #070a0c;border-bottom:1px solid #2d3e4d}.options-bar .subnav{display:none}#site-map-link,.account-signin,.adjust-font-size,.icon-search,.icon-search:before,.jump-to-menu,.search-the-site,.winkwink-nudgenudge{display:-moz-inline-stack;display:inline-block;vertical-align:middle}.account-signin,.touch .search-the-site,.winkwink-nudgenudge{border-left:1px solid #2d3e4d}.adjust-font-size,.jump-to-menu,.touch #site-map-link,.winkwink-nudgenudge{border-right:1px solid #070a0c}#site-map-link{color:#bbb}.menu-icon{display:inline-block;font-size:1.25em;margin:-.125em -.125em 0 0}.search-the-site{text-align:left;padding:.35em .2em .3em}.search-the-site .icon-search:before{font-size:1.75em;margin:0 .125em 0 .25em}.search-field{width:4.5em;margin-bottom:0;color:#bbb;background-color:transparent;border:none;margin:.125em 0;padding:.4em 0 .3em;-moz-border-radius:0;-webkit-border-radius:0px;border-radius:0}.search-field::-webkit-input-placeholder{color:#bbb;font-style:normal}.search-field:-moz-placeholder{color:#bbb;font-style:normal}.search-button{margin-right:.2em;margin-bottom:0;text-shadow:none}.touch .search-button{display:none}.account-signin,.adjust-font-size,.winkwink-nudgenudge{text-align:center;overflow:visible}.account-signin .menu,.adjust-font-size .menu,.winkwink-nudgenudge .menu{margin-bottom:0}.account-signin .tier-1>a,.account-signin .tier-2>a,.adjust-font-size .tier-1>a,.adjust-font-size .tier-2>a,.winkwink-nudgenudge .tier-1>a,.winkwink-nudgenudge .tier-2>a{display:block;padding:.5em 1.5em .4em 1em;position:relative}.account-signin .tier-1,.adjust-font-size .tier-1,.winkwink-nudgenudge .tier-1{display:block;width:100%}.account-signin .tier-1>a,.adjust-font-size .tier-1>a,.winkwink-nudgenudge .tier-1>a{text-align:center}.account-signin .tier-2>a,.adjust-font-size .tier-2>a,.winkwink-nudgenudge .tier-2>a{text-align:left}.account-signin .menu:after,.adjust-font-size .menu:after,.winkwink-nudgenudge .menu:after{content:"";display:table;clear:both}.account-signin .tier-1,.adjust-font-size .tier-1,.winkwink-nudgenudge .tier-1{position:relative}.account-signin .subnav,.adjust-font-size .subnav,.winkwink-nudgenudge .subnav{position:absolute;z-index:100;text-align:left}.touch .account-signin .subnav,.touch .adjust-font-size .subnav,.touch .winkwink-nudgenudge .subnav{top:120%;display:none;opacity:0;-moz-box-shadow:0 .25em .75em rgba(0,0,0,.6);-webkit-box-shadow:0 .25em .75em rgba(0,0,0,.6);box-shadow:0 .25em .75em rgba(0,0,0,.6)}.touch .account-signin .subnav:before,.touch .adjust-font-size .subnav:before,.touch .winkwink-nudgenudge .subnav:before{position:absolute;content:"";width:0;height:0;border-color:transparent;border-style:solid;border-width:.75em;top:-1.45em;display:block}.touch .account-signin .last .subnav:before,.touch .adjust-font-size .last .subnav:before,.touch .winkwink-nudgenudge .last .subnav:before{left:auto;right:1.5em}.account-signin .tier-2,.adjust-font-size .tier-2,.winkwink-nudgenudge .tier-2{display:block;min-width:100%}.account-signin .tier-2 a,.adjust-font-size .tier-2 a,.winkwink-nudgenudge .tier-2 a{white-space:nowrap}.account-signin a,.adjust-font-size a,.winkwink-nudgenudge a{color:#bbb;background-color:transparent}.account-signin .tier-1,.adjust-font-size .tier-1,.winkwink-nudgenudge .tier-1{float:none}.account-signin .subnav,.adjust-font-size .subnav,.winkwink-nudgenudge .subnav{background-color:#caccce}.account-signin .subnav a,.adjust-font-size .subnav a,.winkwink-nudgenudge .subnav a{color:#555}.adjust-font-size .subnav .text-reset{color:#888}.touch .account-signin .subnav,.touch .adjust-font-size .subnav,.touch .winkwink-nudgenudge .subnav{top:135%;border:3px solid #666}.touch .account-signin .subnav:before,.touch .adjust-font-size .subnav:before,.touch .winkwink-nudgenudge .subnav:before{top:-1.6em;border-color:transparent transparent #666 transparent}.account-signin{display:none}#site-map-link,.account-signin .tier-1>a,.adjust-font-size .tier-1>a,.winkwink-nudgenudge .tier-1>a{padding:1em 1em .875em}.main-navigation{display:none;margin-bottom:1px}.header-banner{clear:both;margin:0 1em;position:relative}.header-banner p{color:#e6e8ea}.header-banner a:not(.button),.header-banner a:not(.readmore){color:#ffd343}.home .slideshow{margin:0 auto;max-width:61.25em;background:#1e2933;-moz-box-shadow:inset 0 0 30px rgba(0,0,0,.6);-webkit-box-shadow:inset 0 0 30px rgba(0,0,0,.6);box-shadow:inset 0 0 30px rgba(0,0,0,.6)}.slide-code,.slide-copy{text-align:left}.slide-code{overflow:auto;padding:1.25em 1.5em}.slide-code code{display:inline-block;color:#11a611}.slide-code code .comment{color:#666}.slide-code code .output{color:#ddd}.js .launch-shell{display:none}.slide-copy{background:#1c3b56;padding:1.25em 2.5em}.slide-copy h1{color:#ffd343;font-size:1.3125em;font-family:SourceSansProBold,Arial,sans-serif}#dive-into-python .flex-control-paging{position:absolute;bottom:0;left:50%;padding:0 0 1em;margin-left:0;width:50%;max-width:30.75em}#dive-into-python .flex-control-paging a{opacity:.7}#dive-into-python .flex-control-paging .flex-active{color:#ffd343!important;opacity:1}.introduction{color:#caccce;font-size:1.25em;text-align:left;padding:.25em .5em;margin-top:.875em;margin-bottom:.875em}.introduction p{line-height:1.4em;margin-bottom:0}.introduction .breaker{display:none}.fontface .widget-title span:before{font-size:.875em}.widget-title>span{margin-right:.25em}.widget-title>span:before{color:#999}.python .widget-title>span:before{color:#3776ab}.fontface .pep-widget .widget-title span:before{font-size:.875em}.fontface .footer-links a span:before{font-size:.875em}.flex-slideshow{position:relative}.flex-slideshow .slides:after{content:"";display:table;clear:both}.flex-slideshow .slides>li{display:none;-webkit-backface-visibility:hidden}.flex-control-nav li{display:inline-block}.flex-control-nav a{display:block}.flex-control-nav{text-align:center;padding:0 2.5em}.flex-control-nav a{font-size:1em;line-height:1em;color:#888;margin-left:.5em}.flex-control-nav .flex-active{color:#666;background-color:#fff}.touch .flex-control-nav a{padding:.5em .75em}#nojs{padding:.75em .75em .65em;text-align:center;background-color:#c33}#nojs p{color:#e6e6e6;font-weight:700;margin:0}.js #nojs{display:none}.screen-reader-text{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.icon-arrow-down,.icon-arrow-up,.icon-facebook,.icon-freenode,.icon-search,.icon-twitter{font-family:Pythonicon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;margin-right:.5em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-arrow-down span,.icon-arrow-up span{display:none}@font-face{font-family:Pythonicon;src:url("fonts/Pythonicon.29786ee4711a.eot")}.icon-search:before{content:"\e613"}.icon-facebook:before{content:"\e618"}.icon-arrow-up:before{content:"\e61a"}.icon-arrow-down:before{content:"\e61d"}.icon-freenode:before{content:"\e61e"}.icon-twitter:before{content:"\e621"}@font-face{font-family:Flux-Regular;src:url("fonts/FluxRegular.076154ae2009.eot");font-weight:400;font-style:normal}@font-face{font-family:SourceSansProRegular;src:url("fonts/SourceSansPro-Regular-webfont.a08bd5dd820c.eot");src:url("fonts/SourceSansPro-Regular-webfont.a08bd5dd820c.eot?#iefix") format("embedded-opentype"),url("fonts/SourceSansPro-Regular-webfont.fd0d51605201.woff") format("woff"),url("fonts/SourceSansPro-Regular-webfont.185ff557118a.ttf") format("truetype"),url("fonts/SourceSansPro-Regular-webfont.78fc0a3c105e.svg#source_sans_proregular") format("svg");font-weight:400;font-style:normal}@font-face{font-family:SourceSansProBold;src:url("fonts/SourceSansPro-Bold-webfont.5eb84e881059.eot");src:url("fonts/SourceSansPro-Bold-webfont.5eb84e881059.eot?#iefix") format("embedded-opentype"),url("fonts/SourceSansPro-Bold-webfont.be855452e565.woff") format("woff"),url("fonts/SourceSansPro-Bold-webfont.20175f77d5d1.ttf") format("truetype"),url("fonts/SourceSansPro-Bold-webfont.a569314f9f19.svg#source_sans_probold") format("svg");font-weight:700;font-style:normal}@media not print,braille,embossed,speech,tty{.container:after{content:"";display:table;clear:both}.container:after{content:"";display:table;clear:both}@media (max-width:30em){body:after{content:"animatebody";display:none;speak:none}.slideshow{display:none}}@media (min-width:25em){body:after{content:"animatebody";display:none;speak:none}.introduction{font-size:1.3125em}}@-ms-viewport{width:device-width}@viewport{width:device-width}}</style>
+    <script type="text/javascript" async="" src="./index_files/ga.js.download"></script><script src="./index_files/modernizr.js.download"></script>
+
+    <link href="./index_files/style.15ff3dddc9c3.css" rel="stylesheet" type="text/css" media="print" title="default" onload="this.media='all'">
+    <link href="./index_files/mq.f9187444a4a1.css" rel="stylesheet" type="text/css" media="print" onload="this.media='not print, braille, embossed, speech, tty'">
+    
+
+    <!--[if (lte IE 8)&(!IEMobile)]>
+    <link href="/static/stylesheets/no-mq.bf0c425cdb73.css" rel="stylesheet" type="text/css" media="screen" />
+    
+    
+    <![endif]-->
+    <link rel="stylesheet" href="./index_files/jquery-ui.css" media="print" onload="this.media='all'">
+
+    
+    <link rel="icon" type="image/x-icon" href="https://www.python.org/static/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.python.org/static/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.python.org/static/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.python.org/static/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="https://www.python.org/static/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="https://www.python.org/static/apple-touch-icon-precomposed.png">
+
+    
+    <meta name="msapplication-TileImage" content="/static/metro-icon-144x144-precomposed.png"><!-- white shape -->
+    <meta name="msapplication-TileColor" content="#3673a5"><!-- python blue -->
+    <meta name="msapplication-navbutton-color" content="#3673a5">
+
+    <title>Welcome to Python.org</title>
+
+    <meta name="description" content="The official home of the Python Programming Language">
+    <meta name="keywords" content="Python programming language object oriented web free open source software license documentation download community">
+
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Python.org">
+    <meta property="og:title" content="Welcome to Python.org">
+    <meta property="og:description" content="The official home of the Python Programming Language">
+    
+    <meta property="og:image" content="https://www.python.org/static/opengraph-icon-200x200.png">
+    <meta property="og:image:secure_url" content="https://www.python.org/static/opengraph-icon-200x200.png">
+    
+    <meta property="og:url" content="https://www.python.org/">
+
+    <link rel="author" href="https://www.python.org/static/humans.txt">
+
+    <link rel="alternate" type="application/rss+xml" title="Python Enhancement Proposals" href="https://www.python.org/dev/peps/peps.rss/">
+    <link rel="alternate" type="application/rss+xml" title="Python Job Opportunities" href="https://www.python.org/jobs/feed/rss/">
+    <link rel="alternate" type="application/rss+xml" title="Python Software Foundation News" href="https://feeds.feedburner.com/PythonSoftwareFoundationNews">
+    <link rel="alternate" type="application/rss+xml" title="Python Insider" href="https://feeds.feedburner.com/PythonInsider">
+
+    
+
+    
+    <script type="application/ld+json">
+     {
+       "@context": "https://schema.org",
+       "@type": "WebSite",
+       "url": "https://www.python.org/",
+       "potentialAction": {
+         "@type": "SearchAction",
+         "target": "https://www.python.org/search/?q={search_term_string}",
+         "query-input": "required name=search_term_string"
+       }
+     }
+    </script>
+
+    
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39055973-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    
+<style data-emotion="css"></style><style type="text/css"> 
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+      </style></head>
+
+<body class="python home" id="homepage">
+
+    <div id="touchnav-wrapper">
+
+        <div id="nojs" class="do-not-print">
+            <p><strong>Notice:</strong> While JavaScript is not essential for this website, your interaction with the content will be limited. Please turn JavaScript on for the full experience. </p>
+        </div>
+
+        <!--[if lte IE 8]>
+        <div id="oldie-warning" class="do-not-print">
+            <p>
+                <strong>Notice:</strong> Your browser is <em>ancient</em>. Please
+                <a href="http://browsehappy.com/">upgrade to a different browser</a> to experience a better web.
+            </p>
+        </div>
+        <![endif]-->
+
+        <!-- Sister Site Links -->
+        <div id="top" class="top-bar do-not-print">
+
+            <nav class="meta-navigation container" role="navigation">
+
+                
+                <div class="skip-link screen-reader-text">
+                    <a href="https://www.python.org/#content" title="Skip to content">Skip to content</a>
+                </div>
+
+                
+                <a id="close-python-network" class="jump-link" href="https://www.python.org/#python-network" aria-hidden="true">
+                    <span aria-hidden="true" class="icon-arrow-down"><span>▼</span></span> Close
+                </a>
+
+                
+
+<ul class="menu" role="tree">
+    
+    <li class="python-meta current_item selectedcurrent_branch selected">
+        <a href="https://www.python.org/" title="The Python Programming Language" class="current_item selectedcurrent_branch selected">Python</a>
+    </li>
+    
+    <li class="psf-meta ">
+        <a href="https://www.python.org/psf-landing/" title="The Python Software Foundation">PSF</a>
+    </li>
+    
+    <li class="docs-meta ">
+        <a href="https://docs.python.org/" title="Python Documentation">Docs</a>
+    </li>
+    
+    <li class="pypi-meta ">
+        <a href="https://pypi.org/" title="Python Package Index">PyPI</a>
+    </li>
+    
+    <li class="jobs-meta ">
+        <a href="https://www.python.org/jobs/" title="Python Job Board">Jobs</a>
+    </li>
+    
+    <li class="shop-meta ">
+        <a href="https://www.python.org/community-landing/">Community</a>
+    </li>
+    
+</ul>
+
+
+                <a id="python-network" class="jump-link" href="https://www.python.org/#top" aria-hidden="true">
+                    <span aria-hidden="true" class="icon-arrow-up"><span>▲</span></span> The Python Network
+                </a>
+
+            </nav>
+
+        </div>
+
+        <!-- Header elements -->
+        <header class="main-header" role="banner">
+            <div class="container">
+
+                <h1 class="site-headline">
+                    <a href="https://www.python.org/"><img class="python-logo" src="./index_files/python-logo@2x.png" alt="python™" width="217" height="61"></a>
+                </h1>
+
+                <div class="options-bar-container do-not-print">
+                    <a href="https://psfmember.org/civicrm/contribute/transact?reset=1&amp;id=2" class="donate-button">Donate</a>
+                    <div class="options-bar">
+                        
+                        <a id="site-map-link" class="jump-to-menu" href="https://www.python.org/#site-map"><span class="menu-icon">≡</span> Menu</a><form class="search-the-site" action="https://www.python.org/search/" method="get">
+                            <fieldset title="Search Python.org">
+
+                                <span aria-hidden="true" class="icon-search"></span>
+
+                                <label class="screen-reader-text" for="id-search-field">Search This Site</label>
+                                <input id="id-search-field" name="q" type="search" role="textbox" class="search-field" placeholder="Search" value="" tabindex="1">
+
+                                <button type="submit" name="submit" id="submit" class="search-button" title="Submit this Search" tabindex="3">
+                                    GO
+                                </button>
+
+                                
+                                <!--[if IE]><input type="text" style="display: none;" disabled="disabled" size="1" tabindex="4"><![endif]-->
+
+                            </fieldset>
+                        </form><span class="breaker"></span><div class="adjust-font-size" aria-hidden="true">
+                            <ul class="navigation menu" aria-label="Adjust Text Size on Page">
+                                <li class="tier-1 last" aria-haspopup="true">
+                                    <a href="https://www.python.org/#" class="action-trigger"><strong><small>A</small> A</strong></a>
+                                    <ul class="subnav menu">
+                                        <li class="tier-2 element-1" role="treeitem"><a class="text-shrink" title="Make Text Smaller" href="javascript:;">Smaller</a></li>
+                                        <li class="tier-2 element-2" role="treeitem"><a class="text-grow" title="Make Text Larger" href="javascript:;">Larger</a></li>
+                                        <li class="tier-2 element-3" role="treeitem"><a class="text-reset" title="Reset any font size changes I have made" href="javascript:;">Reset</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><div class="winkwink-nudgenudge">
+                            <ul class="navigation menu" aria-label="Social Media Navigation">
+                                <li class="tier-1 last" aria-haspopup="true">
+                                    <a href="https://www.python.org/#" class="action-trigger">Socialize</a>
+                                    <ul class="subnav menu">
+                                        <li class="tier-2 element-1" role="treeitem"><a href="https://www.facebook.com/pythonlang?fref=ts"><span aria-hidden="true" class="icon-facebook"></span>Facebook</a></li>
+                                        <li class="tier-2 element-2" role="treeitem"><a href="https://twitter.com/ThePSF"><span aria-hidden="true" class="icon-twitter"></span>Twitter</a></li>
+                                        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/community/irc/"><span aria-hidden="true" class="icon-freenode"></span>Chat on IRC</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <span data-html-include="/authenticated"><div class="account-signin">
+    <ul class="navigation menu" aria-label="Social Media Navigation">
+        <li class="tier-1 last" aria-haspopup="true">
+            
+            <a href="https://www.python.org/accounts/login/" title="Sign Up or Sign In to Python.org">Sign In</a>
+            <ul class="subnav menu">
+                <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/accounts/signup/">Sign Up / Register</a></li>
+                <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/accounts/login/">Sign In</a></li>
+            </ul>
+            
+        </li>
+    </ul>
+</div>
+
+</span>
+                    </div><!-- end options-bar -->
+                </div>
+
+                <nav id="mainnav" class="python-navigation main-navigation do-not-print" role="navigation">
+                    
+                        
+<ul class="navigation menu" role="menubar" aria-label="Main Navigation">
+  
+    
+    
+    <li id="about" class="tier-1 element-1  " aria-haspopup="true">
+        <a href="https://www.python.org/about/" title="" class="">About</a>
+        
+            
+
+<ul class="subnav menu" role="menu" aria-hidden="true">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/about/apps/" title="">Applications</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/about/quotes/" title="">Quotes</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/about/gettingstarted/" title="">Getting Started</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/about/help/" title="">Help</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="http://brochure.getpython.info/" title="">Python Brochure</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    
+    <li id="downloads" class="tier-1 element-2  " aria-haspopup="true">
+        <a href="https://www.python.org/downloads/" title="" class="">Downloads</a>
+        
+            
+
+<ul class="subnav menu" role="menu" aria-hidden="true">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/downloads/" title="">All releases</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/downloads/source/" title="">Source code</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/downloads/windows/" title="">Windows</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/downloads/macos/" title="">macOS</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://www.python.org/download/other/" title="">Other Platforms</a></li>
+    
+        <li class="tier-2 element-6" role="treeitem"><a href="https://docs.python.org/3/license.html" title="">License</a></li>
+    
+        <li class="tier-2 element-7" role="treeitem"><a href="https://www.python.org/download/alternatives" title="">Alternative Implementations</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    
+    <li id="documentation" class="tier-1 element-3  " aria-haspopup="true">
+        <a href="https://www.python.org/doc/" title="" class="">Documentation</a>
+        
+            
+
+<ul class="subnav menu" role="menu" aria-hidden="true">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/doc/" title="">Docs</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/doc/av" title="">Audio/Visual Talks</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://wiki.python.org/moin/BeginnersGuide" title="">Beginner's Guide</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://devguide.python.org/" title="">Developer's Guide</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://docs.python.org/faq/" title="">FAQ</a></li>
+    
+        <li class="tier-2 element-6" role="treeitem"><a href="http://wiki.python.org/moin/Languages" title="">Non-English Docs</a></li>
+    
+        <li class="tier-2 element-7" role="treeitem"><a href="http://python.org/dev/peps/" title="">PEP Index</a></li>
+    
+        <li class="tier-2 element-8" role="treeitem"><a href="https://wiki.python.org/moin/PythonBooks" title="">Python Books</a></li>
+    
+        <li class="tier-2 element-9" role="treeitem"><a href="https://www.python.org/doc/essays/" title="">Python Essays</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    
+    <li id="community" class="tier-1 element-4  " aria-haspopup="true">
+        <a href="https://www.python.org/community/" title="" class="">Community</a>
+        
+            
+
+<ul class="subnav menu" role="menu" aria-hidden="true">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/community/survey" title="">Community Survey</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/community/diversity/" title="">Diversity</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/community/lists/" title="">Mailing Lists</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/community/irc/" title="">IRC</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://www.python.org/community/forums/" title="">Forums</a></li>
+    
+        <li class="tier-2 element-6" role="treeitem"><a href="https://www.python.org/psf/annual-report/2021/" title="">PSF Annual Impact Report</a></li>
+    
+        <li class="tier-2 element-7" role="treeitem"><a href="https://www.python.org/community/workshops/" title="">Python Conferences</a></li>
+    
+        <li class="tier-2 element-8" role="treeitem"><a href="https://www.python.org/community/sigs/" title="">Special Interest Groups</a></li>
+    
+        <li class="tier-2 element-9" role="treeitem"><a href="https://www.python.org/community/logos/" title="">Python Logo</a></li>
+    
+        <li class="tier-2 element-10" role="treeitem"><a href="https://wiki.python.org/moin/" title="">Python Wiki</a></li>
+    
+        <li class="tier-2 element-11" role="treeitem"><a href="https://www.python.org/community/merchandise/" title="">Merchandise</a></li>
+    
+        <li class="tier-2 element-12" role="treeitem"><a href="https://www.python.org/community/awards" title="">Community Awards</a></li>
+    
+        <li class="tier-2 element-13" role="treeitem"><a href="https://www.python.org/psf/conduct/" title="">Code of Conduct</a></li>
+    
+        <li class="tier-2 element-14" role="treeitem"><a href="https://www.python.org/psf/get-involved/" title="">Get Involved</a></li>
+    
+        <li class="tier-2 element-15" role="treeitem"><a href="https://www.python.org/psf/community-stories/" title="">Shared Stories</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    
+    <li id="success-stories" class="tier-1 element-5  " aria-haspopup="true">
+        <a href="https://www.python.org/success-stories/" title="success-stories" class="">Success Stories</a>
+        
+            
+
+<ul class="subnav menu" role="menu" aria-hidden="true">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/success-stories/category/arts/" title="">Arts</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/success-stories/category/business/" title="">Business</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/success-stories/category/education/" title="">Education</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/success-stories/category/engineering/" title="">Engineering</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://www.python.org/success-stories/category/government/" title="">Government</a></li>
+    
+        <li class="tier-2 element-6" role="treeitem"><a href="https://www.python.org/success-stories/category/scientific/" title="">Scientific</a></li>
+    
+        <li class="tier-2 element-7" role="treeitem"><a href="https://www.python.org/success-stories/category/software-development/" title="">Software Development</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    
+    <li id="news" class="tier-1 element-6  " aria-haspopup="true">
+        <a href="https://www.python.org/blogs/" title="News from around the Python world" class="">News</a>
+        
+            
+
+<ul class="subnav menu" role="menu" aria-hidden="true">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/blogs/" title="Python Insider Blog Posts">Python News</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/psf/newsletter/" title="Python Software Foundation Newsletter">PSF Newsletter</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="http://planetpython.org/" title="Planet Python">Community News</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="http://pyfound.blogspot.com/" title="PSF Blog">PSF News</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="http://pycon.blogspot.com/" title="PyCon Blog">PyCon News</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    
+    <li id="events" class="tier-1 element-7  " aria-haspopup="true">
+        <a href="https://www.python.org/events/" title="" class="">Events</a>
+        
+            
+
+<ul class="subnav menu" role="menu" aria-hidden="true">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/events/python-events/" title="">Python Events</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/events/python-user-group/" title="">User Group Events</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/events/python-events/past/" title="">Python Events Archive</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/events/python-user-group/past/" title="">User Group Events Archive</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://wiki.python.org/moin/PythonEventsCalendar#Submitting_an_Event" title="">Submit an Event</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    
+    
+    
+  
+</ul>
+
+                    
+                </nav>
+
+                <div class="header-banner "> <!-- for optional "do-not-print" class -->
+                    
+        <div id="dive-into-python" class="flex-slideshow slideshow" style="">
+
+            <ul class="launch-shell menu" id="launch-shell" style="display: none;">
+                <li>
+                    <a class="button prompt" id="start-shell" data-shell-container="#dive-into-python" href="https://www.python.org/shell/">&gt;_
+                        <span class="message">Launch Interactive Shell</span>
+                    </a>
+                </li>
+            </ul>
+
+            
+        <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides menu" style="width: 1400%; transition-duration: 0s; transform: translate3d(-231px, 0px, 0px);"><li class="clone" style="width: 190px; float: left; display: block;">
+                    <div class="slide-code"><pre><code><span class="comment"># For loop on a list</span>
+&gt;&gt;&gt; numbers = [2, 4, 6, 8]
+&gt;&gt;&gt; product = 1
+&gt;&gt;&gt; for number in numbers:
+...    product = product * number
+... 
+&gt;&gt;&gt; print('The product is:', product)
+<span class="output">The product is: 384</span></code></pre></div>
+                    <div class="slide-copy"><h1>All the Flow You’d Expect</h1>
+<p>Python knows the usual control flow statements that other languages speak — <code>if</code>, <code>for</code>, <code>while</code> and <code>range</code> — with some of its own twists, of course. <a href="https://docs.python.org/3/tutorial/controlflow.html">More control flow tools in Python&nbsp;3</a></p></div>
+                </li>
+                
+                <li style="width: 190px; float: left; display: block;" class="flex-active-slide">
+                    <div class="slide-code"><pre><code><span class="comment"># Python 3: Fibonacci series up to n</span>
+&gt;&gt;&gt; def fib(n):
+&gt;&gt;&gt;     a, b = 0, 1
+&gt;&gt;&gt;     while a &lt; n:
+&gt;&gt;&gt;         print(a, end=' ')
+&gt;&gt;&gt;         a, b = b, a+b
+&gt;&gt;&gt;     print()
+&gt;&gt;&gt; fib(1000)
+<span class="output">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</span></code></pre></div>
+                    <div class="slide-copy"><h1>Functions Defined</h1>
+<p>The core of extensible programming is defining functions. Python allows mandatory and optional arguments, keyword arguments, and even arbitrary argument lists. <a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">More about defining functions in Python&nbsp;3</a></p></div>
+                </li>
+                
+                <li style="width: 190px; float: left; display: block;">
+                    <div class="slide-code"><pre><code><span class="comment"># Python 3: List comprehensions</span>
+&gt;&gt;&gt; fruits = ['Banana', 'Apple', 'Lime']
+&gt;&gt;&gt; loud_fruits = [fruit.upper() for fruit in fruits]
+&gt;&gt;&gt; print(loud_fruits)
+<span class="output">['BANANA', 'APPLE', 'LIME']</span>
+
+<span class="comment"># List and the enumerate function</span>
+&gt;&gt;&gt; list(enumerate(fruits))
+<span class="output">[(0, 'Banana'), (1, 'Apple'), (2, 'Lime')]</span></code></pre></div>
+                    <div class="slide-copy"><h1>Compound Data Types</h1>
+<p>Lists (known as arrays in other languages) are one of the compound data types that Python understands. Lists can be indexed, sliced and manipulated with other built-in functions. <a href="https://docs.python.org/3/tutorial/introduction.html#lists">More about lists in Python&nbsp;3</a></p></div>
+                </li>
+                
+                <li style="width: 190px; float: left; display: block;">
+                    <div class="slide-code"><pre><code><span class="comment"># Python 3: Simple arithmetic</span>
+&gt;&gt;&gt; 1 / 2
+<span class="output">0.5</span>
+&gt;&gt;&gt; 2 ** 3
+<span class="output">8</span>
+&gt;&gt;&gt; 17 / 3  <span class="comment"># classic division returns a float</span>
+<span class="output">5.666666666666667</span>
+&gt;&gt;&gt; 17 // 3  <span class="comment"># floor division</span>
+<span class="output">5</span></code></pre></div>
+                    <div class="slide-copy"><h1>Intuitive Interpretation</h1>
+<p>Calculations are simple with Python, and expression syntax is straightforward: the operators <code>+</code>, <code>-</code>, <code>*</code> and <code>/</code> work as expected; parentheses <code>()</code> can be used for grouping. <a href="http://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator">More about simple math functions in Python&nbsp;3</a>.</p></div>
+                </li>
+                
+                <li style="width: 190px; float: left; display: block;">
+                    <div class="slide-code"><pre><code><span class="comment"># Python 3: Simple output (with Unicode)</span>
+&gt;&gt;&gt; print("Hello, I'm Python!")
+<span class="output">Hello, I'm Python!</span>
+
+<span class="comment"># Input, assignment</span>
+&gt;&gt;&gt; name = input('What is your name?\n')
+&gt;&gt;&gt; print('Hi, %s.' % name)
+<span class="output">What is your name?
+Python
+Hi, Python.</span></code></pre></div>
+                    <div class="slide-copy"><h1>Quick &amp; Easy to Learn</h1>
+<p>Experienced programmers in any other language can pick up Python very quickly, and beginners find the clean syntax and indentation structure easy to learn. <a href="https://docs.python.org/3/tutorial/">Whet your appetite</a> with our Python&nbsp;3 overview.</p>
+                   </div>
+                </li>
+                
+                <li style="width: 190px; float: left; display: block;">
+                    <div class="slide-code"><pre><code><span class="comment"># For loop on a list</span>
+&gt;&gt;&gt; numbers = [2, 4, 6, 8]
+&gt;&gt;&gt; product = 1
+&gt;&gt;&gt; for number in numbers:
+...    product = product * number
+... 
+&gt;&gt;&gt; print('The product is:', product)
+<span class="output">The product is: 384</span></code></pre></div>
+                    <div class="slide-copy"><h1>All the Flow You’d Expect</h1>
+<p>Python knows the usual control flow statements that other languages speak — <code>if</code>, <code>for</code>, <code>while</code> and <code>range</code> — with some of its own twists, of course. <a href="https://docs.python.org/3/tutorial/controlflow.html">More control flow tools in Python&nbsp;3</a></p></div>
+                </li>
+                
+            <li style="width: 190px; float: left; display: block;" class="clone">
+                    <div class="slide-code"><pre><code><span class="comment"># Python 3: Fibonacci series up to n</span>
+&gt;&gt;&gt; def fib(n):
+&gt;&gt;&gt;     a, b = 0, 1
+&gt;&gt;&gt;     while a &lt; n:
+&gt;&gt;&gt;         print(a, end=' ')
+&gt;&gt;&gt;         a, b = b, a+b
+&gt;&gt;&gt;     print()
+&gt;&gt;&gt; fib(1000)
+<span class="output">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</span></code></pre></div>
+                    <div class="slide-copy"><h1>Functions Defined</h1>
+<p>The core of extensible programming is defining functions. Python allows mandatory and optional arguments, keyword arguments, and even arbitrary argument lists. <a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">More about defining functions in Python&nbsp;3</a></p></div>
+                </li></ul></div><ol class="flex-control-nav flex-control-paging"><li><a class="flex-active">1</a></li><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li><li><a>5</a></li></ol></div>
+
+
+                </div>
+
+                
+        <div class="introduction">
+            <p>Python is a programming language that lets you work quickly <span class="breaker"></span>and integrate systems more effectively. <a class="readmore" href="https://www.python.org/doc/">Learn More</a></p>
+        </div>
+
+
+             </div><!-- end .container -->
+        </header>
+
+        <div id="content" class="content-wrapper">
+            <!-- Main Content Column -->
+            <div class="container">
+
+                <section class="main-content " role="main">
+
+                    
+                    
+
+                    
+
+                    
+
+                
+
+                <div class="row">
+
+                    <div class="small-widget get-started-widget">
+                        <h2 class="widget-title"><span aria-hidden="true" class="icon-get-started"></span>Get Started</h2>
+<p>Whether you're new to programming or an experienced developer, it's easy to learn and use Python.</p>
+<p><a href="https://www.python.org/about/gettingstarted/">Start with our Beginner’s Guide</a></p>
+                    </div>
+
+                    <div class="small-widget download-widget">
+                        <h2 class="widget-title"><span aria-hidden="true" class="icon-download"></span>Download</h2>
+<p>Python source code and installers are available for download for all versions!</p>
+<p>Latest: <a href="https://www.python.org/downloads/release/python-3100/">Python 3.10.0</a></p>
+                    </div>
+
+                    <div class="small-widget documentation-widget">
+                        <h2 class="widget-title"><span aria-hidden="true" class="icon-documentation"></span>Docs</h2>
+<p>Documentation for Python's standard library, along with tutorials and guides, are available online.</p>
+<p><a href="https://docs.python.org/">docs.python.org</a></p>
+                    </div>
+
+                    <div class="small-widget jobs-widget last">
+                        <h2 class="widget-title"><span aria-hidden="true" class="icon-jobs"></span>Jobs</h2>
+<p>Looking for work or have a Python related position that you're trying to hire for? Our <strong>relaunched community-run job board</strong> is the place to go.</p>
+<p><a href="https://jobs.python.org/">jobs.python.org</a></p>
+                    </div>
+
+                </div>
+
+                <div class="list-widgets row">
+
+                    <div class="medium-widget blog-widget">
+                        
+                        <div class="shrubbery">
+                        
+                            <h2 class="widget-title"><span aria-hidden="true" class="icon-news"></span>Latest News</h2>
+                            <p class="give-me-more"><a href="https://blog.python.org/" title="More News">More</a></p>
+                            
+                            <ul class="menu">
+                                
+                                
+                                <li>
+<time datetime="2021-10-04T21:07:00+00:00"><span class="say-no-more">2021-</span>10-04</time>
+ <a href="http://feedproxy.google.com/~r/PythonInsider/~3/ojK529j7CAQ/python-3100-is-available.html">Python 3.10.0 is available</a></li>
+                                
+                                <li>
+<time datetime="2021-09-23T08:41:00.000003+00:00"><span class="say-no-more">2021-</span>09-23</time>
+ <a href="http://feedproxy.google.com/~r/PythonSoftwareFoundationNews/~3/qwHz7RZ7wBQ/katia-lira-awarded-psf-community.html">Katia Lira Awarded the PSF Community Service Award for Q2 2020</a></li>
+                                
+                                <li>
+<time datetime="2021-09-17T17:19:00.000004+00:00"><span class="say-no-more">2021-</span>09-17</time>
+ <a href="http://feedproxy.google.com/~r/PythonSoftwareFoundationNews/~3/QQwpt6e2N-w/tereza-iofciu-awarded-psf-community.html">Tereza Iofciu Awarded the PSF Community Service Award for Q1 2021</a></li>
+                                
+                                <li>
+<time datetime="2021-09-07T23:33:00.000001+00:00"><span class="say-no-more">2021-</span>09-07</time>
+ <a href="http://feedproxy.google.com/~r/PythonInsider/~3/MNLSuW5j-cI/python-3100rc2-is-available.html">Python 3.10.0rc2 is available</a></li>
+                                
+                                <li>
+<time datetime="2021-09-04T22:00:00.000005+00:00"><span class="say-no-more">2021-</span>09-04</time>
+ <a href="http://feedproxy.google.com/~r/PythonInsider/~3/vI_S3Fb6-ks/python-3712-and-3615-security-updates.html">Python 3.7.12 and 3.6.15 security updates now available</a></li>
+                                
+                            </ul>
+                        </div><!-- end .shrubbery -->
+
+                    </div>
+
+                    <div class="medium-widget event-widget last">
+                        
+                        <div class="shrubbery">
+                        
+                            <h2 class="widget-title"><span aria-hidden="true" class="icon-calendar"></span>Upcoming Events</h2>
+                            <p class="give-me-more"><a href="https://www.python.org/events/calendars/" title="More Events">More</a></p>
+                            
+                            <ul class="menu">
+                                
+                                
+                                
+                                <li>
+<time datetime="2021-10-07T00:00:00+00:00"><span class="say-no-more">2021-</span>10-07</time>
+ <a href="https://www.python.org/events/python-events/1087/">PyCon ZA 2021</a></li>
+                                
+                                
+                                
+                                <li>
+<time datetime="2021-10-21T00:00:00+00:00"><span class="say-no-more">2021-</span>10-21</time>
+ <a href="https://www.python.org/events/python-events/1093/">PyCon Sweden 2021</a></li>
+                                
+                                
+                                
+                                <li>
+<time datetime="2021-10-23T00:00:00+00:00"><span class="say-no-more">2021-</span>10-23</time>
+ <a href="https://www.python.org/events/python-events/1144/">Plone Conference 2021 Online</a></li>
+                                
+                                
+                                
+                                <li>
+<time datetime="2021-10-28T00:00:00+00:00"><span class="say-no-more">2021-</span>10-28</time>
+ <a href="https://www.python.org/events/python-events/1143/">PyData Global 2021</a></li>
+                                
+                                
+                                
+                                <li>
+<time datetime="2021-11-05T00:00:00+00:00"><span class="say-no-more">2021-</span>11-05</time>
+ <a href="https://www.python.org/events/python-events/1140/">PyCon Chile</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="medium-widget success-stories-widget">
+                        
+
+
+
+                        <div class="shrubbery">
+                            
+
+                            <h2 class="widget-title"><span aria-hidden="true" class="icon-success-stories"></span>Success Stories</h2>
+                            <p class="give-me-more"><a href="https://www.python.org/success-stories/" title="More Success Stories">More</a></p>
+
+                            
+                            <div class="success-story-item" id="success-story-836">
+
+                            <blockquote>
+                                <a href="https://www.python.org/success-stories/python-seo-link-analyzer/">"Python is all about automating repetitive tasks, leaving more time for your other SEO efforts."</a>
+                            </blockquote>
+
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" class="quote-from">
+                                <tbody>
+                                    <tr>
+                                        
+                                        <td><p><a href="https://www.python.org/success-stories/python-seo-link-analyzer/">Using Python scripts to analyse SEO and broken links on your site</a> <em>by Marnix de Munck</em></p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            
+
+                        </div><!-- end .shrubbery -->
+
+                    </div>
+
+                    <div class="medium-widget applications-widget last">
+                        <div class="shrubbery">
+                            <h2 class="widget-title"><span aria-hidden="true" class="icon-python"></span>Use Python for…</h2>
+<p class="give-me-more"><a href="https://www.python.org/about/apps" title="More Applications">More</a></p>
+
+<ul class="menu">
+    <li><b>Web Development</b>:
+        <span class="tag-wrapper"><a class="tag" href="http://www.djangoproject.com/">Django</a>, <a class="tag" href="http://www.pylonsproject.org/">Pyramid</a>, <a class="tag" href="http://bottlepy.org/">Bottle</a>, <a class="tag" href="http://tornadoweb.org/">Tornado</a>, <a href="http://flask.pocoo.org/" class="tag">Flask</a>, <a class="tag" href="http://www.web2py.com/">web2py</a></span></li>
+    <li><b>GUI Development</b>:
+        <span class="tag-wrapper"><a class="tag" href="http://wiki.python.org/moin/TkInter">tkInter</a>, <a class="tag" href="https://wiki.gnome.org/Projects/PyGObject">PyGObject</a>, <a class="tag" href="http://www.riverbankcomputing.co.uk/software/pyqt/intro">PyQt</a>, <a class="tag" href="https://wiki.qt.io/PySide">PySide</a>, <a class="tag" href="https://kivy.org/">Kivy</a>, <a class="tag" href="http://www.wxpython.org/">wxPython</a></span></li>
+    <li><b>Scientific and Numeric</b>:
+        <span class="tag-wrapper">
+<a class="tag" href="http://www.scipy.org/">SciPy</a>, <a class="tag" href="http://pandas.pydata.org/">Pandas</a>, <a href="http://ipython.org/" class="tag">IPython</a></span></li>
+    <li><b>Software Development</b>:
+        <span class="tag-wrapper"><a class="tag" href="http://buildbot.net/">Buildbot</a>, <a class="tag" href="http://trac.edgewall.org/">Trac</a>, <a class="tag" href="http://roundup.sourceforge.net/">Roundup</a></span></li>
+    <li><b>System Administration</b>:
+        <span class="tag-wrapper"><a class="tag" href="http://www.ansible.com/">Ansible</a>, <a class="tag" href="http://www.saltstack.com/">Salt</a>, <a class="tag" href="https://www.openstack.org/">OpenStack</a>, <a class="tag" href="https://xon.sh/">xonsh</a></span></li>
+</ul>
+                        </div><!-- end .shrubbery -->
+                    </div>
+
+                </div>
+
+                
+                <div class="pep-widget">
+
+                    <h2 class="widget-title">
+                        <span class="prompt">&gt;&gt;&gt;</span> <a href="https://www.python.org/dev/peps/">Python Enhancement Proposals<span class="say-no-more"> (PEPs)</span></a>: The future of Python<span class="say-no-more"> is discussed here.</span>
+                        <a aria-hidden="true" class="rss-link" href="https://www.python.org/dev/peps/peps.rss"><span class="icon-feed"></span> RSS</a>
+                    </h2>
+
+
+                    
+                    
+                </div>
+
+                                <div class="psf-widget">
+
+                    <div class="python-logo"></div>
+                    
+                    <h2 class="widget-title">
+    <span class="prompt">&gt;&gt;&gt;</span> <a href="https://www.python.org/psf/">Python Software Foundation</a>
+</h2>
+<p>The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. <a class="readmore" href="https://www.python.org/psf/">Learn more</a> </p>
+<p class="click-these">
+    <a class="button" href="https://www.python.org/users/membership/">Become a Member</a>
+    <a class="button" href="https://www.python.org/psf/donations/">Donate to the PSF</a>
+</p>
+                </div>
+
+
+
+
+                </section>
+
+                
+                
+
+                
+                
+
+
+            </div><!-- end .container -->
+        </div><!-- end #content .content-wrapper -->
+
+        <!-- Footer and social media list -->
+        
+        <footer id="site-map" class="main-footer" role="contentinfo">
+            <div class="main-footer-links">
+                <div class="container">
+
+                    
+                    <a id="back-to-top-1" class="jump-link" href="https://www.python.org/#python-network"><span aria-hidden="true" class="icon-arrow-up"><span>▲</span></span> Back to Top</a>
+
+                    
+
+<ul class="sitemap navigation menu do-not-print" role="tree" id="container" style="position: relative; height: 3162.96px;">
+    
+    <li class="tier-1 element-1" style="position: absolute; left: 0px; top: 0px;">
+        <a href="https://www.python.org/about/">About</a>
+        
+            
+
+<ul class="subnav menu">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/about/apps/" title="">Applications</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/about/quotes/" title="">Quotes</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/about/gettingstarted/" title="">Getting Started</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/about/help/" title="">Help</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="http://brochure.getpython.info/" title="">Python Brochure</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    <li class="tier-1 element-2" style="position: absolute; left: 0px; top: 298px;">
+        <a href="https://www.python.org/downloads/">Downloads</a>
+        
+            
+
+<ul class="subnav menu">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/downloads/" title="">All releases</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/downloads/source/" title="">Source code</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/downloads/windows/" title="">Windows</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/downloads/macos/" title="">macOS</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://www.python.org/download/other/" title="">Other Platforms</a></li>
+    
+        <li class="tier-2 element-6" role="treeitem"><a href="https://docs.python.org/3/license.html" title="">License</a></li>
+    
+        <li class="tier-2 element-7" role="treeitem"><a href="https://www.python.org/download/alternatives" title="">Alternative Implementations</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    <li class="tier-1 element-3" style="position: absolute; left: 0px; top: 682px;">
+        <a href="https://www.python.org/doc/">Documentation</a>
+        
+            
+
+<ul class="subnav menu">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/doc/" title="">Docs</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/doc/av" title="">Audio/Visual Talks</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://wiki.python.org/moin/BeginnersGuide" title="">Beginner's Guide</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://devguide.python.org/" title="">Developer's Guide</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://docs.python.org/faq/" title="">FAQ</a></li>
+    
+        <li class="tier-2 element-6" role="treeitem"><a href="http://wiki.python.org/moin/Languages" title="">Non-English Docs</a></li>
+    
+        <li class="tier-2 element-7" role="treeitem"><a href="http://python.org/dev/peps/" title="">PEP Index</a></li>
+    
+        <li class="tier-2 element-8" role="treeitem"><a href="https://wiki.python.org/moin/PythonBooks" title="">Python Books</a></li>
+    
+        <li class="tier-2 element-9" role="treeitem"><a href="https://www.python.org/doc/essays/" title="">Python Essays</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    <li class="tier-1 element-4" style="position: absolute; left: 0px; top: 1151px;">
+        <a href="https://www.python.org/community/">Community</a>
+        
+            
+
+<ul class="subnav menu">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/community/survey" title="">Community Survey</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/community/diversity/" title="">Diversity</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/community/lists/" title="">Mailing Lists</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/community/irc/" title="">IRC</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://www.python.org/community/forums/" title="">Forums</a></li>
+    
+        <li class="tier-2 element-6" role="treeitem"><a href="https://www.python.org/psf/annual-report/2021/" title="">PSF Annual Impact Report</a></li>
+    
+        <li class="tier-2 element-7" role="treeitem"><a href="https://www.python.org/community/workshops/" title="">Python Conferences</a></li>
+    
+        <li class="tier-2 element-8" role="treeitem"><a href="https://www.python.org/community/sigs/" title="">Special Interest Groups</a></li>
+    
+        <li class="tier-2 element-9" role="treeitem"><a href="https://www.python.org/community/logos/" title="">Python Logo</a></li>
+    
+        <li class="tier-2 element-10" role="treeitem"><a href="https://wiki.python.org/moin/" title="">Python Wiki</a></li>
+    
+        <li class="tier-2 element-11" role="treeitem"><a href="https://www.python.org/community/merchandise/" title="">Merchandise</a></li>
+    
+        <li class="tier-2 element-12" role="treeitem"><a href="https://www.python.org/community/awards" title="">Community Awards</a></li>
+    
+        <li class="tier-2 element-13" role="treeitem"><a href="https://www.python.org/psf/conduct/" title="">Code of Conduct</a></li>
+    
+        <li class="tier-2 element-14" role="treeitem"><a href="https://www.python.org/psf/get-involved/" title="">Get Involved</a></li>
+    
+        <li class="tier-2 element-15" role="treeitem"><a href="https://www.python.org/psf/community-stories/" title="">Shared Stories</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    <li class="tier-1 element-5" style="position: absolute; left: 0px; top: 1874px;">
+        <a href="https://www.python.org/success-stories/" title="success-stories">Success Stories</a>
+        
+            
+
+<ul class="subnav menu">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/success-stories/category/arts/" title="">Arts</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/success-stories/category/business/" title="">Business</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/success-stories/category/education/" title="">Education</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/success-stories/category/engineering/" title="">Engineering</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://www.python.org/success-stories/category/government/" title="">Government</a></li>
+    
+        <li class="tier-2 element-6" role="treeitem"><a href="https://www.python.org/success-stories/category/scientific/" title="">Scientific</a></li>
+    
+        <li class="tier-2 element-7" role="treeitem"><a href="https://www.python.org/success-stories/category/software-development/" title="">Software Development</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    <li class="tier-1 element-6" style="position: absolute; left: 0px; top: 2258px;">
+        <a href="https://www.python.org/blogs/" title="News from around the Python world">News</a>
+        
+            
+
+<ul class="subnav menu">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/blogs/" title="Python Insider Blog Posts">Python News</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/psf/newsletter/" title="Python Software Foundation Newsletter">PSF Newsletter</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="http://planetpython.org/" title="Planet Python">Community News</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="http://pyfound.blogspot.com/" title="PSF Blog">PSF News</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="http://pycon.blogspot.com/" title="PyCon Blog">PyCon News</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    <li class="tier-1 element-7" style="position: absolute; left: 0px; top: 2557px;">
+        <a href="https://www.python.org/events/">Events</a>
+        
+            
+
+<ul class="subnav menu">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://www.python.org/events/python-events/" title="">Python Events</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://www.python.org/events/python-user-group/" title="">User Group Events</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://www.python.org/events/python-events/past/" title="">Python Events Archive</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/events/python-user-group/past/" title="">User Group Events Archive</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://wiki.python.org/moin/PythonEventsCalendar#Submitting_an_Event" title="">Submit an Event</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+    <li class="tier-1 element-8" style="position: absolute; left: 0px; top: 2855px;">
+        <a href="https://www.python.org/dev/">Contributing</a>
+        
+            
+
+<ul class="subnav menu">
+    
+        <li class="tier-2 element-1" role="treeitem"><a href="https://devguide.python.org/" title="">Developer's Guide</a></li>
+    
+        <li class="tier-2 element-2" role="treeitem"><a href="https://bugs.python.org/" title="">Issue Tracker</a></li>
+    
+        <li class="tier-2 element-3" role="treeitem"><a href="https://mail.python.org/mailman/listinfo/python-dev" title="">python-dev list</a></li>
+    
+        <li class="tier-2 element-4" role="treeitem"><a href="https://www.python.org/dev/core-mentorship/" title="">Core Mentorship</a></li>
+    
+        <li class="tier-2 element-5" role="treeitem"><a href="https://www.python.org/dev/security/" title="">Report a Security Issue</a></li>
+    
+</ul>
+
+        
+    </li>
+    
+</ul>
+
+
+                    <a id="back-to-top-2" class="jump-link" href="https://www.python.org/#python-network"><span aria-hidden="true" class="icon-arrow-up"><span>▲</span></span> Back to Top</a>
+                    
+
+                </div><!-- end .container -->
+            </div> <!-- end .main-footer-links -->
+
+            <div class="site-base">
+                <div class="container">
+                    
+                    <ul class="footer-links navigation menu do-not-print" role="tree">
+                        <li class="tier-1 element-1"><a href="https://www.python.org/about/help/">Help &amp; <span class="say-no-more">General</span> Contact</a></li>
+                        <li class="tier-1 element-2"><a href="https://www.python.org/community/diversity/">Diversity <span class="say-no-more">Initiatives</span></a></li>
+                        <li class="tier-1 element-3"><a href="https://github.com/python/pythondotorg/issues">Submit Website Bug</a></li>
+                        <li class="tier-1 element-4">
+                            <a href="https://status.python.org/" title="All Systems Operational">Status <span class="python-status-indicator-none" id="python-status-indicator"></span></a>
+                        </li>
+                    </ul>
+
+                    <div class="copyright">
+                        <p><small>
+                            <span class="pre">Copyright ©2001-2021.</span>
+                            &nbsp;<span class="pre"><a href="https://www.python.org/psf-landing/">Python Software Foundation</a></span>
+                            &nbsp;<span class="pre"><a href="https://www.python.org/about/legal/">Legal Statements</a></span>
+                            &nbsp;<span class="pre"><a href="https://www.python.org/privacy/">Privacy Policy</a></span>
+                            &nbsp;<span class="pre"><a href="https://www.python.org/psf/sponsorship/sponsors/#heroku">Powered by Heroku</a></span>
+                        </small></p>
+                    </div>
+
+                </div><!-- end .container -->
+            </div><!-- end .site-base -->
+
+        </footer>
+        
+
+    </div><!-- end #touchnav-wrapper -->
+
+    
+    <script src="./index_files/jquery.min.js.download"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/libs/jquery-1.8.2.min.js"><\/script>')</script>
+    <script src="./index_files/jquery-ui.min.js.download"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/libs/jquery-ui-1.12.1.min.js"><\/script>')</script>
+
+    <script src="./index_files/masonry.pkgd.min.js.download"></script>
+    <script src="./index_files/html-includes.js.download"></script>
+
+    <script type="text/javascript" src="./index_files/main-min.dd72c1659644.js.download" charset="utf-8"></script>
+    
+
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="/static/js/plugins/IE8-min.8af6e26c7a3b.js" charset="utf-8"></script>
+    
+    
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="/static/js/plugins/getComputedStyle-min.d41d8cd98f00.js" charset="utf-8"></script>
+    
+    
+    <![endif]-->
+
+    
+
+    
+    
+
+
+
+<div id="778faf3a-321e-4af2-8a0e-f06b5b5cb905-bottom"></div><div id="426082a4-01eb-4f1c-ac1d-b9d69c6b249b-loading-animation"><div data-testid="wrapper" class="_loading_overlay_wrapper css-79elbk workflow-extension-loading-overlay inactive"></div></div></body></html>
